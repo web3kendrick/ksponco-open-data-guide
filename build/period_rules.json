@@ -1,0 +1,33 @@
+{
+  "comment": "Hand-confirmed table of the period expressions found in the portal descriptions. 'anchor' must appear verbatim in the description; the build stops trusting a row (status 'changed') when it no longer does. Stated start and end are parsed from the anchor text by build.py, never typed here.",
+  "ok_year_min": 2000,
+  "ok_year_max": 2027,
+  "period": [
+    {"id": "15118652", "anchor": "2013년 부터 2024년 8월", "kind": "range", "noun": "강좌"},
+    {"id": "15131671", "anchor": "2023년도 1월 부터 12월까지", "kind": "range", "noun": "장소별 주차대수"},
+    {"id": "15101610", "anchor": "2013년 부터 2024년 강좌까지", "kind": "range", "noun": "강좌"},
+    {"id": "15110953", "anchor": "2013년 부터 2025년 2월", "kind": "range", "noun": "강좌"},
+    {"id": "15114776", "anchor": "2013년 부터 2025년 8월", "kind": "range", "noun": "강좌"},
+    {"id": "15090255", "anchor": "2010년부터 데이터를 제공하고 있으며, 현재 2025년 4월까지", "kind": "range", "noun": "정보목록"},
+    {"id": "15133891", "anchor": "2021년 1월부터 ~2025년 12월까지", "kind": "range", "noun": "테니스장 이용 정보"},
+    {"id": "15138735", "anchor": "2024년 7월 차량에 대한 입출차 정보", "kind": "single", "noun": "입출차 정보"},
+    {"id": "15137825", "anchor": "2025년도 기준 데이터", "kind": "asof_year", "noun": "언론보도 현황"},
+    {"id": "15090719", "anchor": "2012년부터 2015년까지", "kind": "range", "noun": "이벤트 정보"},
+    {"id": "15144222", "anchor": "2014년 부터 현재까지", "kind": "to_present", "noun": "정원 현황"}
+  ],
+  "shared_description": [
+    {"id": "15090715", "same_as": "15090255", "anchor": "2010년부터 데이터를 제공하고 있으며, 현재 2025년 4월까지"}
+  ],
+  "not_period": [
+    {"id": "15133891", "anchor": "2026년도 정보는 2027년에 업데이트할 예정", "reason": "갱신 계획을 적은 문장"},
+    {"id": "15133891", "anchor": "2021년에는 총", "reason": "연도별 이용자 수를 적은 문장"},
+    {"id": "15138735", "anchor": "2024년 7월에 대한 입 출차에 대한 정보만 제공", "reason": "기간 문장과 같은 내용을 되풀이한 문장"},
+    {"id": "15131671", "anchor": "2023년에는 올림픽공원 및 미사경정공원의 전체 총 주차 건수", "reason": "연간 합계를 적은 문장"},
+    {"id": "15131671", "anchor": "2025년에는 2024년에 대한", "reason": "갱신 계획을 적은 문장"},
+    {"id": "15090715", "anchor": "예 : 2022년 3월 정보목록입니다", "reason": "제목 예시를 적은 문장"},
+    {"id": "15090255", "anchor": "예 : 2022년 3월 정보목록입니다", "reason": "제목 예시를 적은 문장"},
+    {"id": "15160326", "anchor": "2026년 7월 현재 244건", "reason": "건수의 기준 시점을 적은 문장"},
+    {"id": "15144222", "anchor": "2025년도 7월에 개방하였습니다", "reason": "개방 시점을 적은 문장"},
+    {"id": "15149169", "anchor": "2025 keyland", "reason": "공연 이름에 든 연도"}
+  ]
+}

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>한국체육산업개발 공공데이터 이용 안내</title>
+<meta name="description" content="한국체육산업개발이 공공데이터포털에 개방한 파일의 실제 자료 기간과 이용 시 주의점을 포털 설명과 나란히 보여 주는 안내">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="index">
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<header class="mast">
+  <div class="wrap">
+    <a class="site" href="index.html">한국체육산업개발 공공데이터 이용 안내</a>
+    <nav aria-label="주 메뉴">
+      <ul>
+      <li><a href="index.html" aria-current="page">전체 목록</a></li>
+      <li><a href="suggestions.html">설명 갱신 제안</a></li>
+      <li><a href="method.html">계산 방법과 출처</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <div class="wrap">
+    <h1>한국체육산업개발 공공데이터 이용 안내</h1>
+    <p class="lead" id="lead"></p>
+    <dl class="facts" id="facts"></dl>
+    <p class="note-line" id="method-note"></p>
+
+    <h2>공개 파일 목록</h2>
+    <form class="controls" id="filters" role="search" aria-label="목록 거르기">
+      <div><label for="f-q">이름으로 찾기</label><input id="f-q" type="search" autocomplete="off"></div>
+      <div><label for="f-group">분야</label><select id="f-group"><option value="">전체</option></select></div>
+      <div><label for="f-status">상태</label><select id="f-status"><option value="">전체</option></select></div>
+      <div><label for="f-sort">정렬</label><select id="f-sort">
+        <option value="group">분야순</option>
+        <option value="downloads">내려받기 많은 순</option>
+        <option value="gap">설명과 차이 큰 순</option>
+        <option value="caution">주의점 많은 순</option>
+        <option value="end">최신 자료 순</option>
+        <option value="name">이름순</option>
+      </select></div>
+    </form>
+    <p class="count" id="count" role="status" aria-live="polite"></p>
+    <div class="scroll" id="table"></div>
+    <p id="app-error" hidden>자료 파일 data.js를 읽지 못해 내용을 표시하지 못함. data.json과 data.js가 이 화면과 같은 폴더에 있는지 확인할 것.</p>
+    <noscript><p>이 화면은 자바스크립트로 자료 파일을 읽어 표를 그림. 자바스크립트를 켤 수 없으면 <a href="data.json">data.json</a>을 직접 열어 볼 것.</p></noscript>
+  </div>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <p id="foot-data"></p>
+    <p>이 안내는 공개 파일을 내려받아 계산한 비공식 참고 자료이며 한국체육산업개발의 공식 안내와는 별개임. 개인정보와 쿠키, 외부 요청을 쓰지 않음.</p>
+  </div>
+</footer>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

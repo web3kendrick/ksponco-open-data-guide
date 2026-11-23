@@ -58,7 +58,7 @@
   function leadHtml(D) {
     var h = D.headline;
     var c = D.lead_case;
-    var out = "한국체육산업개발 공공데이터를 내려받아 쓰는 개발자, 학생, 연구자를 위한 안내로, 데이터마다 실제 자료 기간, 이용 시 주의점, 바로 쓰는 조건을 보여 줌. 공개 파일 <strong>" + num(h.datasets) +
+    var out = "한국체육산업개발 공공데이터를 내려받아 쓰는 개발자, 학생, 연구자를 위한 안내로, 데이터마다 실제 자료 기간, 이용 시 주의점, 권장 조건을 보여 줌. 공개 파일 <strong>" + num(h.datasets) +
       "종</strong> 가운데 설명에 기간이 적힌 <strong>" + num(h.period_stated) + "건 중 " + num(h.newer) +
       "건</strong>은 실제 자료가 설명보다 <strong>" + num(h.gap_min) + "개월에서 " + num(h.gap_max) + "개월 더 최신</strong>임.";
     if (c) {
@@ -192,7 +192,7 @@
       return '<ul class="plain">' + list.map(function (n) { return "<li>" + esc(n.title) + ". " + esc(n.body) + "</li>"; }).join("") + "</ul>";
     }
     return '<ol class="notes">' + list.map(function (n) {
-      return "<li><h3>" + esc(n.title) + "</h3><p>" + esc(n.body) + "</p>" + (n.use ? '<p class="use"><b>바로 쓰는 조건</b>' + esc(n.use) + "</p>" : "") + "</li>";
+      return "<li><h3>" + esc(n.title) + "</h3><p>" + esc(n.body) + "</p>" + (n.use ? '<p class="use"><b>권장 조건</b>' + esc(n.use) + "</p>" : "") + "</li>";
     }).join("") + "</ol>";
   }
   function datasetHtml(D, id) {
